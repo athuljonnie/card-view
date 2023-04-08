@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: black; width:100%;" >
+  <a class="navbar-brand" href="#" style="color:red; "><b><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/800px-Manchester_United_FC_crest.svg.png" style="width: 50px;"></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:white;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:white;">History</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">UCL</a>
+          <a class="dropdown-item" href="#">PL</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">UEL</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Join</button>
+    </form>
+  </div>
+</nav>
+    </header>
+
+
+    <section class="bg-light " style="background-image:url(https://w0.peakpx.com/wallpaper/275/996/HD-wallpaper-red-abstract-kor4-rts-liquid-pattern-silk-stains-texture-water-waves.jpg)">
+        <h1 class="text-center pt-3 " style="color:rgb(0, 0, 0);text-shadow:2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;"><b>SAMPLE 1: Players 🚩</b></h1>
+        <div class="container mt-5">
+        <div class="row">
+            {{#each players}}
+            <div class="col-md-3 " style="margin-top:20px">
+                <div class="card" style="width: 18rem;color:rgb(247, 242, 242);background-color:rgb(0, 0, 0)">
+                    <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{this.name}}</h5>
+                        <p class="card-text">{{this.country}}</p>
+                        <p class="card-text">{{this.position}}</p>
+                        <p class="card-text">{{this.description}} 🚩</p>
+                        <a href="#" class="btn btn-danger">Sign The Player</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-light" style="background-image:url(https://w0.peakpx.com/wallpaper/275/996/HD-wallpaper-red-abstract-kor4-rts-liquid-pattern-silk-stains-texture-water-waves.jpg)">
+        <h1 class="text-center pt-3 mol" style="color:rgb(0, 0, 0);text-shadow:2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;"><b>SAMPLE 2: Players List 🚩</b></h1>
+        <div class="container mt-5 ">
+        <div class="row "> 
+            <div class="col">
+                <ul class="list-group ">
+                    {{#each players}}
+                 <li class="list-group-item text-center  btn-light" style="color:white ;background-color:rgb(12, 2, 2)" ><b>{{this.name}}</b></li>
+                    {{/each}}
+        </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-light" style="background-image:url(https://w0.peakpx.com/wallpaper/275/996/HD-wallpaper-red-abstract-kor4-rts-liquid-pattern-silk-stains-texture-water-waves.jpg)">
+        <h1 class="text-center pt-3 mol" style="color:rgb(0, 0, 0);text-shadow:2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;"><b>SAMPLE 3: Players Details 🚩</b></h1>
+        <div class="container mt-5">
+        <div class="row">
+            
+            <div class="col">
+                <table class="table " style="background-color: rgb(12, 2, 2); color:rgb(255, 255, 255);">
+    <thead>
+    <tr>
+      <th scope="col"><b>J.No</b></th>
+      <th scope="col"><b>Name</b></th>
+      <th scope="col"><b>Country</b></th>
+      <th scope="col"><b>Position</b></th>
+    </tr>
+    </thead>
+
+        {{#each players}}
+            <tbody>
+            <tr>
+            <th scope="row">{{jerseynum}}</th>
+            <td>{{name}}</td>
+            <td>{{country}}</td>
+            <td>{{position}}</td>
+            </tr>
+            </tbody>
+         {{/each}}
+    </table>
+            </div>
+        
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
